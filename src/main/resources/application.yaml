@@ -1,0 +1,25 @@
+spring:
+
+  cloud:
+
+    stream:
+
+      kafka:
+
+        binder:
+
+          brokers: 172.16.26.112:9092
+
+      bindings:
+
+        greetings-in:
+
+          destination: greetings
+
+          contentType: application/json
+
+        greetings-out:
+
+          destination: greetings
+
+          contentType: application/json
